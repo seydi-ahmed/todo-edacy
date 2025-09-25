@@ -1,0 +1,57 @@
+### Récupérer toutes les listes
+GET http://localhost:3000/lists
+
+### Récupérer les 5 dernières listes
+GET http://localhost:3000/lists/recent
+
+### Récupérer une liste par nom
+GET http://localhost:3000/lists/MaListe
+
+### Créer une nouvelle liste
+POST http://localhost:3000/lists
+Content-Type: application/json
+
+{
+  "titre": "MaListe",
+  "status": "TO_DO"
+}
+
+### Modifier une liste
+PUT http://localhost:3000/lists/1
+Content-Type: application/json
+
+{
+  "titre": "MaListeModifiée",
+  "status": "IN_PROGRESS"
+}
+
+### Modifier partiellement une liste
+PATCH http://localhost:3000/lists/1
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
+
+### Supprimer une liste
+DELETE http://localhost:3000/lists/1
+
+### Ajouter un item
+POST http://localhost:3000/items/1
+Content-Type: application/json
+
+{
+  "libelle": "Acheter du pain",
+  "status": "NOT_DONE"
+}
+
+### Supprimer un item
+DELETE http://localhost:3000/items/1
+
+### Changer le statut d’un item
+PATCH http://localhost:3000/items/1/status
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
