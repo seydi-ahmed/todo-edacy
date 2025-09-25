@@ -44,7 +44,7 @@ todo-edacy/
 
 ### 1. Cloner le projet
 ```bash
-git clone <url-du-repo>
+git clone https://github.com/seydi-ahmed/todo-edacy.git
 cd todo-edacy
 ```
 
@@ -178,5 +178,3 @@ Pour toute question ou suggestion concernant ce projet :
 💼 **LinkedIn :** [https://www.linkedin.com/in/mouhamed-diouf-435207174](https://www.linkedin.com/in/mouhamed-diouf-435207174)
 
 ---
-
-*Développé avec ❤️ par Mouhamed Diouf - UGB*
