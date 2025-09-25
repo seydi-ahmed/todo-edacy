@@ -1,4 +1,4 @@
 git add .
-git commit -m "Dockerfile and docker-compose OK"
+git commit -m "Readme"
 git push gitea
 git push github
