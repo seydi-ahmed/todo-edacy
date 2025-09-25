@@ -9,4 +9,8 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    command: npm start
+      - prisma-data:/usr/src/app/prisma
+    command: sh -c "npx prisma db push --accept-data-loss && npm start"
+
+volumes:
+  prisma-data:
