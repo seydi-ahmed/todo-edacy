@@ -1,5 +1,5 @@
 {
-  "name": "todo-api",
+  "name": "todo-edcay",
   "version": "1.0.0",
   "main": "src/server.js",
   "type": "commonjs",
