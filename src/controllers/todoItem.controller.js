@@ -30,3 +30,12 @@ exports.updateItemStatus = async (req, res, next) => {
     res.json({ success: true, data: updatedItem });
   } catch (err) { next(err); }
 };
+
+exports.getAllItems = async (req, res, next) => {
+  try {
+    const items = await prisma.tODOItem.findMany();
+    res.json({ success: true, data: items });
+  } catch (error) {
+    next(error);
+  }
+};

@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: todo-edacy-api
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=file:./prisma/dev.db
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm start
