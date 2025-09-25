@@ -90,6 +90,21 @@ npm run seed
 npm run dev
 ```
 
+## 📡 Endpoints API
+
+### Listes de Tâches
+- `GET /api/lists` - Récupérer toutes les listes
+- `POST /api/lists` - Créer une nouvelle liste
+- `GET /api/lists/:id` - Récupérer une liste spécifique
+- `PUT /api/lists/:id` - Mettre à jour une liste
+- `DELETE /api/lists/:id` - Supprimer une liste
+
+### Éléments de Tâches
+- `GET /api/lists/:listId/items` - Récupérer les éléments d'une liste
+- `POST /api/lists/:listId/items` - Ajouter un élément à une liste
+- `PUT /api/items/:id` - Mettre à jour un élément
+- `DELETE /api/items/:id` - Supprimer un élément
+
 ## 📊 Modèle de Données
 
 ### TODOList
